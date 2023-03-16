@@ -21,9 +21,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
 }
 
-.games-title > p {
-    color: #aaaaaa;
+.games-title-text {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.games-cost {
+    margin: 0;
+    padding: 2px;
+    background-color: #4799eb;
+    border-radius: 10%;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .games {
+        margin-top: 0;
+        display: grid;
+    }
 }
