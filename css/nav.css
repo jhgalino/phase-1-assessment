@@ -1,8 +1,17 @@
+.menu {
+    display: flex;
+}
+
 .menu > ul {
     list-style-type: none;
+    display: none;
 }
 
 .menu > ul > li > a {
     text-decoration: none;
     color: #aaaaaa;
+}
+
+#logo {
+    width: 3rem;
 }
