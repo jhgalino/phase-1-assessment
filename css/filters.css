@@ -39,8 +39,15 @@
 }
 
 @media (min-width: 810px) {
+    .filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     .filter-box {
         height: fit-content;
+        margin-bottom: 1.5rem;
     }
 
     .filter-contents {
