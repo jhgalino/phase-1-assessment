@@ -12,8 +12,5 @@ footer > div {
 
 footer > div > a {
     text-decoration: none;
-}
-
-footer > div > a > p{
     color: #aaaaaa;
 }
