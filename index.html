@@ -50,319 +50,320 @@
         <input type="text" name="search" id="search" placeholder="Search for games...">
     </header>
 
-    <main>
-        <!-- Filters -->
-        <section class="filters">
-            <section class="filter-box">
+    <section class="main-content">
+        <main>
+            <!-- Filters -->
+            <section class="filters">
+                <section class="filter-box">
 
-                <select class="filter-select">
-                    <option value="">Sorted By:</option>
-                    <option value="relevance">Relevance</option>
-                    <option value="popularity">Popularity</option>
-                    <option value="release">Release Date</option>
-                    <option value="alphabetical">Alphabetical</option>
-                </select>
+                    <select class="filter-select">
+                        <option value="">Sorted By:</option>
+                        <option value="relevance">Relevance</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="release">Release Date</option>
+                        <option value="alphabetical">Alphabetical</option>
+                    </select>
 
-                <section class="filter-contents">
-                    <p class="filter-title">Platform</p>
-                    <hr>
-
-                    <div>
-                        <input type="checkbox" name="pc" id="pc">
-                        <label for="pc">PC</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" name="browser" id="browser">
-                        <label for="browser">Browser</label>
-                    </div>
-                </section>
-
-            </section>
-
-            <section class="filter-box">
-
-                <select class="filter-select">
-                    <option value="">Filter Type:</option>
-                    <option value="and">AND (All of the options selected)</option>
-                    <option value="or">OR (Any of the options selected)</option>
-                    <option value="not">NOT (Excluding options)</option>
-                </select>
-
-                <section class="filter-contents">
-                    <p class="filter-title">Genre</p>
-                    <hr>
-
-                    <section class="filter-with-scrollbar">
-                        <div>
-                            <input type="checkbox" name="mmo" id="mmo">
-                            <label for="mmo">MMO</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="mmorpg" id="mmorpg">
-                            <label for="mmorpg">MMORPG</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="shooter" id="shooter">
-                            <label for="shooter">Shooter</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="strategy" id="strategy">
-                            <label for="strategy">Strategy</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="moba" id="moba">
-                            <label for="moba">Moba</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="battle-royale" id="battle-royale">
-                            <label for="battle-royale">Battle Royale</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="card" id="card">
-                            <label for="card">Card</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="racing" id="racing">
-                            <label for="racing">Racing</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="sports" id="sports">
-                            <label for="sports">Sports</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="social" id="social">
-                            <label for="social">Social</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="fighting" id="fighting">
-                            <label for="fighting">Fighting</label>
-                        </div>
-                    </section>
-                </section>
-
-            </section>
-
-            <section class="filter-box">
-
-                <section class="filter-contents">
-                    <section>
-
-                        <p class="filter-title">Graphics</p>
+                    <section class="filter-contents">
+                        <p class="filter-title">Platform</p>
                         <hr>
 
                         <div>
-                            <input type="checkbox" name="3d" id="3d">
-                            <label for="3d">3D Graphics</label>
+                            <input type="checkbox" name="pc" id="pc">
+                            <label for="pc">PC</label>
                         </div>
 
                         <div>
-                            <input type="checkbox" name="2d" id="2d">
-                            <label for="2d">2D Graphics</label>
-                        </div>
-
-                    </section>
-
-                    <section>
-
-                        <p class="filter-title">Combat</p>
-                        <hr>
-
-                        <div>
-                            <input type="checkbox" name="pve" id="pve">
-                            <label for="pve">PVE</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="pvp" id="pvp">
-                            <label for="pvp">PVP</label>
-                        </div>
-
-                    </section>
-
-                    <section>
-                        <p class="filter-title">Gameplay</p>
-                        <hr>
-
-                        <div>
-                            <input type="checkbox" name="turn-based" id="turn-based">
-                            <label for="turn-based">Turn-Based</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="real-time" id="real-time">
-                            <label for="real-time">Real-Time</label>
-                        </div>
-                    </section>
-
-                    <section>
-
-                        <p class="filter-title">Setting</p>
-                        <hr>
-
-                        <div>
-                            <input type="checkbox" name="anime" id="anime">
-                            <label for="anime">Anime</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="fantasy" id="fantasy">
-                            <label for="fantasy">Fantasy</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="sci-fi" id="sci-fi">
-                            <label for="sci-fi">Sci-fi</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="military" id="military">
-                            <label for="military">Military</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="horror" id="horror">
-                            <label for="horror">Horror</label>
-                        </div>
-
-                    </section>
-                </section>
-
-            </section>
-
-            <section class="filter-box">
-
-                <section class="filter-contents">
-                    <p class="filter-title">Tags</p>
-                    <hr>
-
-                    <section class="filter-with-scrollbar">
-                        <div>
-                            <input type="checkbox" name="mmofps" id="mmofps">
-                            <label for="mmofps">MMOFPS</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="sandbox" id="sandbox">
-                            <label for="sandbox">Sandbox</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="open-world" id="open-world">
-                            <label for="open-world">Open World</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="survival" id="survival">
-                            <label for="survival">Survival</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="action-rpg" id="action-rpg">
-                            <label for="action-rpg">Action RPG</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="mmorts" id="mmorts">
-                            <label for="mmorts">MMORTS</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="zombie" id="zombie">
-                            <label for="zombie">Zombie</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="first-person" id="first-person">
-                            <label for="first-person">First Person</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="top-down" id="top-down">
-                            <label for="top-down">Top-Down</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="tank" id="tank">
-                            <label for="tank">Tank</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="space" id="space">
-                            <label for="space">Space</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="sailing" id="sailing">
-                            <label for="sailing">Sailing</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="side-scroller" id="side-scroller">
-                            <label for="side-scroller">Side Scroller</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="superhero" id="superhero">
-                            <label for="superhero">Superhero</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="permadeath" id="permadeath">
-                            <label for="permadeath">Permadeath</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="action" id="action">
-                            <label for="action">Action</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="martial-arts" id="martial-arts">
-                            <label for="martial-arts">Martial Arts</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="flight" id="flight">
-                            <label for="flight">Flight</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="low-spec" id="low-spec">
-                            <label for="low-spec">Low-Spec</label>
+                            <input type="checkbox" name="browser" id="browser">
+                            <label for="browser">Browser</label>
                         </div>
                     </section>
 
                 </section>
 
+                <section class="filter-box">
+
+                    <select class="filter-select">
+                        <option value="">Filter Type:</option>
+                        <option value="and">AND (All of the options selected)</option>
+                        <option value="or">OR (Any of the options selected)</option>
+                        <option value="not">NOT (Excluding options)</option>
+                    </select>
+
+                    <section class="filter-contents">
+                        <p class="filter-title">Genre</p>
+                        <hr>
+
+                        <section class="filter-with-scrollbar">
+                            <div>
+                                <input type="checkbox" name="mmo" id="mmo">
+                                <label for="mmo">MMO</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="mmorpg" id="mmorpg">
+                                <label for="mmorpg">MMORPG</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="shooter" id="shooter">
+                                <label for="shooter">Shooter</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="strategy" id="strategy">
+                                <label for="strategy">Strategy</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="moba" id="moba">
+                                <label for="moba">Moba</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="battle-royale" id="battle-royale">
+                                <label for="battle-royale">Battle Royale</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="card" id="card">
+                                <label for="card">Card</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="racing" id="racing">
+                                <label for="racing">Racing</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="sports" id="sports">
+                                <label for="sports">Sports</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="social" id="social">
+                                <label for="social">Social</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="fighting" id="fighting">
+                                <label for="fighting">Fighting</label>
+                            </div>
+                        </section>
+                    </section>
+
+                </section>
+
+                <section class="filter-box">
+
+                    <section class="filter-contents">
+                        <section>
+
+                            <p class="filter-title">Graphics</p>
+                            <hr>
+
+                            <div>
+                                <input type="checkbox" name="3d" id="3d">
+                                <label for="3d">3D Graphics</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="2d" id="2d">
+                                <label for="2d">2D Graphics</label>
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <p class="filter-title">Combat</p>
+                            <hr>
+
+                            <div>
+                                <input type="checkbox" name="pve" id="pve">
+                                <label for="pve">PVE</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="pvp" id="pvp">
+                                <label for="pvp">PVP</label>
+                            </div>
+
+                        </section>
+
+                        <section>
+                            <p class="filter-title">Gameplay</p>
+                            <hr>
+
+                            <div>
+                                <input type="checkbox" name="turn-based" id="turn-based">
+                                <label for="turn-based">Turn-Based</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="real-time" id="real-time">
+                                <label for="real-time">Real-Time</label>
+                            </div>
+                        </section>
+
+                        <section>
+
+                            <p class="filter-title">Setting</p>
+                            <hr>
+
+                            <div>
+                                <input type="checkbox" name="anime" id="anime">
+                                <label for="anime">Anime</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="fantasy" id="fantasy">
+                                <label for="fantasy">Fantasy</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="sci-fi" id="sci-fi">
+                                <label for="sci-fi">Sci-fi</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="military" id="military">
+                                <label for="military">Military</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="horror" id="horror">
+                                <label for="horror">Horror</label>
+                            </div>
+
+                        </section>
+                    </section>
+
+                </section>
+
+                <section class="filter-box">
+
+                    <section class="filter-contents">
+                        <p class="filter-title">Tags</p>
+                        <hr>
+
+                        <section class="filter-with-scrollbar">
+                            <div>
+                                <input type="checkbox" name="mmofps" id="mmofps">
+                                <label for="mmofps">MMOFPS</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="sandbox" id="sandbox">
+                                <label for="sandbox">Sandbox</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="open-world" id="open-world">
+                                <label for="open-world">Open World</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="survival" id="survival">
+                                <label for="survival">Survival</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="action-rpg" id="action-rpg">
+                                <label for="action-rpg">Action RPG</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="mmorts" id="mmorts">
+                                <label for="mmorts">MMORTS</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="zombie" id="zombie">
+                                <label for="zombie">Zombie</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="first-person" id="first-person">
+                                <label for="first-person">First Person</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="top-down" id="top-down">
+                                <label for="top-down">Top-Down</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="tank" id="tank">
+                                <label for="tank">Tank</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="space" id="space">
+                                <label for="space">Space</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="sailing" id="sailing">
+                                <label for="sailing">Sailing</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="side-scroller" id="side-scroller">
+                                <label for="side-scroller">Side Scroller</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="superhero" id="superhero">
+                                <label for="superhero">Superhero</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="permadeath" id="permadeath">
+                                <label for="permadeath">Permadeath</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="action" id="action">
+                                <label for="action">Action</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="martial-arts" id="martial-arts">
+                                <label for="martial-arts">Martial Arts</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="flight" id="flight">
+                                <label for="flight">Flight</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="low-spec" id="low-spec">
+                                <label for="low-spec">Low-Spec</label>
+                            </div>
+                        </section>
+
+                    </section>
+
+                </section>
             </section>
-        </section>
 
-        <!-- Games list -->
-        <section class="games">
+            <!-- Games list -->
+            <section class="games">
 
-            <section class="games-item">
-                <picture>
-                    <img src="assets/valo.webp" alt="An image showing the logo of the video game Valorant">
-                </picture>
-                <section class="games-info">
-                    <a href="" class="games-title">
-                        <p class="games-title-text">Valorant</p>
-                        <p class="games-cost">Free</p>
-                    </a>
-                    <p>Valorant is a free-to-play first-person tactical hero
-                        shooter developed and published by Riot Games, for
-                        Windows.</p>
+                <section class="games-item">
+                    <picture>
+                        <img src="assets/valo.webp" alt="An image showing the logo of the video game Valorant">
+                    </picture>
+                    <section class="games-info">
+                        <a href="" class="games-title">
+                            <p class="games-title-text">Valorant</p>
+                            <p class="games-cost">Free</p>
+                        </a>
+                        <p>Valorant is a free-to-play first-person tactical hero
+                            shooter developed and published by Riot Games, for
+                            Windows.</p>
                         <div class="games-extra-info">
                             <a href="">
                                 <svg height="512px" id="Layer_1" class="icon" style="enable-background:new 0 0 512 512;"
@@ -392,64 +393,64 @@
                                 </svg>
                             </div>
                         </div>
+                    </section>
                 </section>
-            </section>
 
-            <section class="games-item">
-                <picture>
-                    <img src="assets/tft.webp" alt="An image showing the logo of the video game Teamfight
-                                Tactics">
-                </picture>
-                <section class="games-info">
-                    <a href="" class="games-title">
-                        <p class="games-title-text">Teamfight Tactics</p>
-                        <p class="games-cost">Free</p>
-                    </a>
-                    <p>Teamfight Tactics (TFT) is an auto battler game developed and published by Riot Games.</p>
-                    <div class="games-extra-info">
-                        <a href="">
-                            <svg height="512px" id="Layer_1" class="icon" style="enable-background:new 0 0 512 512;"
-                                version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path
-                                        d="M256,32C132.3,32,32,132.3,32,256s100.3,224,224,224s224-100.3,224-224S379.7,32,256,32z M384,272H272v112h-32V272H128v-32   h112V128h32v112h112V272z" />
-                                </g>
-                            </svg>
+                <section class="games-item">
+                    <picture>
+                        <img src="assets/tft.webp" alt="An image showing the logo of the video game Teamfight
+                                    Tactics">
+                    </picture>
+                    <section class="games-info">
+                        <a href="" class="games-title">
+                            <p class="games-title-text">Teamfight Tactics</p>
+                            <p class="games-cost">Free</p>
                         </a>
-                        <div>
-                            <p>Casual</p>
-                            <svg class="icon" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;"
-                                version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path
-                                        d="M199.9,282.7v105.5l-0.8-0.1L95.8,367.3v-84.6H199.9 M202.1,266.7H93.4c-7.4,0-13.4,6.1-13.4,13.7v89   c0,6.6,4.6,11.9,10.7,13.2l105.4,21.1l6.9,1.2c7-0.3,12.7-6.4,12.7-13.5V280.4C215.7,272.7,209.5,266.7,202.1,266.7L202.1,266.7z" />
-                                    <path
-                                        d="M416.2,282.7v147.2l-2.1,1.1l-160.4-32l-1-0.2v-116H416.2 M418.4,266.7H250.2c-7.4,0-13.4,6.1-13.4,13.7v120.5v0.2   c0,5.5,3.3,10.1,7.9,12.2c0.2,0.2,0.2,0.2,0.2,0.2l5.3,1.1c0.2,0,0.2,0,0.3,0l164.7,32.9c0.2,0.1,0.5,0.3,0.7,0.3   c0.1,0,0.2,0,0.3-0.1c0.7,0.4,1.4,0.4,2.1,0.4c7.4,0,13.6-6,13.6-13.5V280.4C432,272.7,425.8,266.7,418.4,266.7L418.4,266.7z" />
-                                    <path
-                                        d="M414,81.1l2.1,1.1v147.2H252.6v-116l1-0.2L414,81.1 M418.4,64c-0.7,0-1.4,0-2.1,0.4c-0.1-0.1-0.2-0.1-0.3-0.1   c-0.2,0-0.5,0.1-0.7,0.3L250.5,97.4c-0.2,0-0.2,0-0.3,0l-5.1,1.1c0,0-0.2,0-0.4,0.2c-4.6,2.1-7.9,6.9-7.9,12.4v120.5   c0,7.6,6,13.7,13.4,13.7h168.2c7.4,0,13.6-6.1,13.6-13.7V77.5C432,70.1,425.8,64,418.4,64L418.4,64z" />
-                                    <path
-                                        d="M199.9,123.9v105.5H95.8v-84.6L199.1,124L199.9,123.9 M203,107l-6.9,1.2L90.7,129.4C84.6,130.7,80,136,80,142.6v89   c0,7.6,6,13.7,13.4,13.7h108.8c7.4,0,13.6-6.1,13.6-13.7V120.5C215.7,113.4,210.1,107.4,203,107L203,107z" />
-                                </g>
-                            </svg>
+                        <p>Teamfight Tactics (TFT) is an auto battler game developed and published by Riot Games.</p>
+                        <div class="games-extra-info">
+                            <a href="">
+                                <svg height="512px" id="Layer_1" class="icon" style="enable-background:new 0 0 512 512;"
+                                    version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <path
+                                            d="M256,32C132.3,32,32,132.3,32,256s100.3,224,224,224s224-100.3,224-224S379.7,32,256,32z M384,272H272v112h-32V272H128v-32   h112V128h32v112h112V272z" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <div>
+                                <p>Casual</p>
+                                <svg class="icon" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;"
+                                    version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <path
+                                            d="M199.9,282.7v105.5l-0.8-0.1L95.8,367.3v-84.6H199.9 M202.1,266.7H93.4c-7.4,0-13.4,6.1-13.4,13.7v89   c0,6.6,4.6,11.9,10.7,13.2l105.4,21.1l6.9,1.2c7-0.3,12.7-6.4,12.7-13.5V280.4C215.7,272.7,209.5,266.7,202.1,266.7L202.1,266.7z" />
+                                        <path
+                                            d="M416.2,282.7v147.2l-2.1,1.1l-160.4-32l-1-0.2v-116H416.2 M418.4,266.7H250.2c-7.4,0-13.4,6.1-13.4,13.7v120.5v0.2   c0,5.5,3.3,10.1,7.9,12.2c0.2,0.2,0.2,0.2,0.2,0.2l5.3,1.1c0.2,0,0.2,0,0.3,0l164.7,32.9c0.2,0.1,0.5,0.3,0.7,0.3   c0.1,0,0.2,0,0.3-0.1c0.7,0.4,1.4,0.4,2.1,0.4c7.4,0,13.6-6,13.6-13.5V280.4C432,272.7,425.8,266.7,418.4,266.7L418.4,266.7z" />
+                                        <path
+                                            d="M414,81.1l2.1,1.1v147.2H252.6v-116l1-0.2L414,81.1 M418.4,64c-0.7,0-1.4,0-2.1,0.4c-0.1-0.1-0.2-0.1-0.3-0.1   c-0.2,0-0.5,0.1-0.7,0.3L250.5,97.4c-0.2,0-0.2,0-0.3,0l-5.1,1.1c0,0-0.2,0-0.4,0.2c-4.6,2.1-7.9,6.9-7.9,12.4v120.5   c0,7.6,6,13.7,13.4,13.7h168.2c7.4,0,13.6-6.1,13.6-13.7V77.5C432,70.1,425.8,64,418.4,64L418.4,64z" />
+                                        <path
+                                            d="M199.9,123.9v105.5H95.8v-84.6L199.1,124L199.9,123.9 M203,107l-6.9,1.2L90.7,129.4C84.6,130.7,80,136,80,142.6v89   c0,7.6,6,13.7,13.4,13.7h108.8c7.4,0,13.6-6.1,13.6-13.7V120.5C215.7,113.4,210.1,107.4,203,107L203,107z" />
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
+                    </section>
                     </div>
                 </section>
-                </div>
-            </section>
 
-            <section class="games-item">
-                <picture>
-                    <img src="assets/dota2.webp" alt="An image showing the logo of the video game DOTA 2">
-                </picture>
-                <section class="games-info">
-                    <a href="" class="games-title">
-                        <p class="games-title-text">DOTA 2</p>
-                        <p class="games-cost">Free</p>
-                    </a>
-                    <p>Dota 2 is a 2013 multiplayer online battle arena (MOBA)
-                        video game by Valve</p>
+                <section class="games-item">
+                    <picture>
+                        <img src="assets/dota2.webp" alt="An image showing the logo of the video game DOTA 2">
+                    </picture>
+                    <section class="games-info">
+                        <a href="" class="games-title">
+                            <p class="games-title-text">DOTA 2</p>
+                            <p class="games-cost">Free</p>
+                        </a>
+                        <p>Dota 2 is a 2013 multiplayer online battle arena (MOBA)
+                            video game by Valve</p>
                         <div class="games-extra-info">
                             <a href="">
                                 <svg height="512px" id="Layer_1" class="icon" style="enable-background:new 0 0 512 512;"
@@ -479,55 +480,56 @@
                                 </svg>
                             </div>
                         </div>
+                    </section>
                 </section>
-            </section>
 
-            <section class="games-item">
-                <picture>
-                    <img src="assets/pubg.webp" alt="An image showing the logo 
-                    of the video game PlayerUnknown\’s Battlegrounds">
-                </picture>
-                <section class="games-info">
-                    <a href="" class="games-title">
-                        <p class="games-title-text">PUBG: Battlegrounds</p>
-                        <p class="games-cost">Free</p>
-                    </a>
-                    <p>PUBG: Battlegrounds (previously known as PlayerUnknown's
-                        Battlegrounds) is a battle royale game developed by PUBG
-                        Studios and published by Krafton</p>
-                    <div class="games-extra-info">
-                        <a href="">
-                            <svg height="512px" id="Layer_1" class="icon" style="enable-background:new 0 0 512 512;"
-                                version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path
-                                        d="M256,32C132.3,32,32,132.3,32,256s100.3,224,224,224s224-100.3,224-224S379.7,32,256,32z M384,272H272v112h-32V272H128v-32   h112V128h32v112h112V272z" />
-                                </g>
-                            </svg>
+                <section class="games-item">
+                    <picture>
+                        <img src="assets/pubg.webp" alt="An image showing the logo 
+                        of the video game PlayerUnknown\’s Battlegrounds">
+                    </picture>
+                    <section class="games-info">
+                        <a href="" class="games-title">
+                            <p class="games-title-text">PUBG: Battlegrounds</p>
+                            <p class="games-cost">Free</p>
                         </a>
-                        <div>
-                            <p>Survival</p>
-                            <svg class="icon" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;"
-                                version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path
-                                        d="M199.9,282.7v105.5l-0.8-0.1L95.8,367.3v-84.6H199.9 M202.1,266.7H93.4c-7.4,0-13.4,6.1-13.4,13.7v89   c0,6.6,4.6,11.9,10.7,13.2l105.4,21.1l6.9,1.2c7-0.3,12.7-6.4,12.7-13.5V280.4C215.7,272.7,209.5,266.7,202.1,266.7L202.1,266.7z" />
-                                    <path
-                                        d="M416.2,282.7v147.2l-2.1,1.1l-160.4-32l-1-0.2v-116H416.2 M418.4,266.7H250.2c-7.4,0-13.4,6.1-13.4,13.7v120.5v0.2   c0,5.5,3.3,10.1,7.9,12.2c0.2,0.2,0.2,0.2,0.2,0.2l5.3,1.1c0.2,0,0.2,0,0.3,0l164.7,32.9c0.2,0.1,0.5,0.3,0.7,0.3   c0.1,0,0.2,0,0.3-0.1c0.7,0.4,1.4,0.4,2.1,0.4c7.4,0,13.6-6,13.6-13.5V280.4C432,272.7,425.8,266.7,418.4,266.7L418.4,266.7z" />
-                                    <path
-                                        d="M414,81.1l2.1,1.1v147.2H252.6v-116l1-0.2L414,81.1 M418.4,64c-0.7,0-1.4,0-2.1,0.4c-0.1-0.1-0.2-0.1-0.3-0.1   c-0.2,0-0.5,0.1-0.7,0.3L250.5,97.4c-0.2,0-0.2,0-0.3,0l-5.1,1.1c0,0-0.2,0-0.4,0.2c-4.6,2.1-7.9,6.9-7.9,12.4v120.5   c0,7.6,6,13.7,13.4,13.7h168.2c7.4,0,13.6-6.1,13.6-13.7V77.5C432,70.1,425.8,64,418.4,64L418.4,64z" />
-                                    <path
-                                        d="M199.9,123.9v105.5H95.8v-84.6L199.1,124L199.9,123.9 M203,107l-6.9,1.2L90.7,129.4C84.6,130.7,80,136,80,142.6v89   c0,7.6,6,13.7,13.4,13.7h108.8c7.4,0,13.6-6.1,13.6-13.7V120.5C215.7,113.4,210.1,107.4,203,107L203,107z" />
-                                </g>
-                            </svg>
+                        <p>PUBG: Battlegrounds (previously known as PlayerUnknown's
+                            Battlegrounds) is a battle royale game developed by PUBG
+                            Studios and published by Krafton</p>
+                        <div class="games-extra-info">
+                            <a href="">
+                                <svg height="512px" id="Layer_1" class="icon" style="enable-background:new 0 0 512 512;"
+                                    version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <path
+                                            d="M256,32C132.3,32,32,132.3,32,256s100.3,224,224,224s224-100.3,224-224S379.7,32,256,32z M384,272H272v112h-32V272H128v-32   h112V128h32v112h112V272z" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <div>
+                                <p>Survival</p>
+                                <svg class="icon" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;"
+                                    version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <path
+                                            d="M199.9,282.7v105.5l-0.8-0.1L95.8,367.3v-84.6H199.9 M202.1,266.7H93.4c-7.4,0-13.4,6.1-13.4,13.7v89   c0,6.6,4.6,11.9,10.7,13.2l105.4,21.1l6.9,1.2c7-0.3,12.7-6.4,12.7-13.5V280.4C215.7,272.7,209.5,266.7,202.1,266.7L202.1,266.7z" />
+                                        <path
+                                            d="M416.2,282.7v147.2l-2.1,1.1l-160.4-32l-1-0.2v-116H416.2 M418.4,266.7H250.2c-7.4,0-13.4,6.1-13.4,13.7v120.5v0.2   c0,5.5,3.3,10.1,7.9,12.2c0.2,0.2,0.2,0.2,0.2,0.2l5.3,1.1c0.2,0,0.2,0,0.3,0l164.7,32.9c0.2,0.1,0.5,0.3,0.7,0.3   c0.1,0,0.2,0,0.3-0.1c0.7,0.4,1.4,0.4,2.1,0.4c7.4,0,13.6-6,13.6-13.5V280.4C432,272.7,425.8,266.7,418.4,266.7L418.4,266.7z" />
+                                        <path
+                                            d="M414,81.1l2.1,1.1v147.2H252.6v-116l1-0.2L414,81.1 M418.4,64c-0.7,0-1.4,0-2.1,0.4c-0.1-0.1-0.2-0.1-0.3-0.1   c-0.2,0-0.5,0.1-0.7,0.3L250.5,97.4c-0.2,0-0.2,0-0.3,0l-5.1,1.1c0,0-0.2,0-0.4,0.2c-4.6,2.1-7.9,6.9-7.9,12.4v120.5   c0,7.6,6,13.7,13.4,13.7h168.2c7.4,0,13.6-6.1,13.6-13.7V77.5C432,70.1,425.8,64,418.4,64L418.4,64z" />
+                                        <path
+                                            d="M199.9,123.9v105.5H95.8v-84.6L199.1,124L199.9,123.9 M203,107l-6.9,1.2L90.7,129.4C84.6,130.7,80,136,80,142.6v89   c0,7.6,6,13.7,13.4,13.7h108.8c7.4,0,13.6-6.1,13.6-13.7V120.5C215.7,113.4,210.1,107.4,203,107L203,107z" />
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
             </section>
-        </section>
-    </main>
+        </main>
+    </section>
 
     <!-- Footer -->
     <footer>

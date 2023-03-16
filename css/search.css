@@ -10,3 +10,22 @@
 #search:focus {
     border-color: #1c1e22;
 }
+
+header {
+    display: flex;
+}
+
+header > input {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+
+    header {
+        justify-content: center;
+    }
+
+    #search {
+        max-width: 1200px;
+    }
+}

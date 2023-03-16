@@ -70,3 +70,21 @@
         display: grid;
     }
 }
+
+@media (min-width: 992px) {
+    .games {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        grid-auto-rows: min-content;
+    }
+}
+
+@media (min-width: 1200px) {
+    .games {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        grid-auto-rows: min-content;
+    }
+}
