@@ -1,0 +1,9 @@
+.filters {
+    display: grid;
+    row-gap: 5rem;
+}
+
+.filter-box {
+    background-color: #32383e;
+    border-radius: 2%;
+}

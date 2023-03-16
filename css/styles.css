@@ -2,3 +2,12 @@ body {
     background-color: #272b30;
     color: #aaaaaa;
 }
+
+main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;;
+}
+
+header {
+    display: flex;
+}
