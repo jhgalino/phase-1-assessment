@@ -1,3 +1,10 @@
 .games {
     margin-top: 1.5rem;
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.games-item {
+    background-color: #32383e;
+    border-radius: 2%;
 }
