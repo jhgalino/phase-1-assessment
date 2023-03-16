@@ -1,0 +1,11 @@
+#search {
+    background-color: #1c1e22;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #aaaaaa;
+    border: none;
+}
+
+#search:focus {
+    border-color: #1c1e22;
+}
