@@ -12,3 +12,18 @@
 .games-item > picture > img {
     width: 100%;
 }
+
+.games-info {
+    padding: 1.25rem;
+}
+
+.games-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games-title > p {
+    color: #aaaaaa;
+    text-decoration: none;
+}
