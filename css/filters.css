@@ -37,3 +37,13 @@
     overflow-y: scroll;
     height: 180px;
 }
+
+@media (min-width: 810px) {
+    .filter-box {
+        height: fit-content;
+    }
+
+    .filter-contents {
+        padding: 1.5rem;
+    }
+}
