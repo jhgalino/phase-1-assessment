@@ -3,26 +3,29 @@
     justify-content: space-between;
     border-bottom: 1px solid black;
     width: 100%;
-    padding: 0.5rem
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #272b30;
+    position: fixed;
 }
 
-.menu > ul {
+.menu>ul {
     list-style-type: none;
     display: none;
 }
 
-.menu > ul > li > a {
+.menu>ul>li>a {
     text-decoration: none;
     color: #aaaaaa;
 }
 
-.menu > button {
+.menu>button {
     margin-right: 1rem;
     background-color: #272b30;
     border: none;
 }
 
-.menu > button > div {
+.menu>button>div {
     width: 35px;
     height: 5px;
     background-color: #aaaaaa;
@@ -37,4 +40,3 @@
     width: 3rem;
     margin-right: 0.1rem;
 }
-
