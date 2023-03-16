@@ -17,11 +17,26 @@
     border-radius: 2%;
 }
 
+.filter-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.75rem 0;
+}
+
 .filter-contents {
-    padding: 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.filter-contents > div > label, 
+.filter-contents > section > div > label {
+    font-size: 1.25rem;
 }
 
 .filter-with-scrollbar {
     overflow-y: scroll;
     height: 180px;
+}
+
+.filter-with-scrollbar > div > label {
+    font-size: 1.25rem;
 }
