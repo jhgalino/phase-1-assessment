@@ -1,13 +1,23 @@
 body {
     background-color: #272b30;
     color: #aaaaaa;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    font-size: .9375rem;
+    line-height: 1.5;
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
     margin-left: 0.5rem;
-    margin-right: 0.5rem;;
+    margin-right: 0.5rem;
 }
 
 header {
     display: flex;
+}
+
+header > input {
+    width: 100%;
 }
