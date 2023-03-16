@@ -9,7 +9,7 @@
     margin-bottom: 1.5rem;
 }
 
-.games-item > picture > img {
+.games-item>picture>img {
     width: 100%;
 }
 
@@ -34,6 +34,34 @@
     background-color: #4799eb;
     border-radius: 10%;
     color: white;
+}
+
+.games-extra-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* used to style the icons for games-extra-info */
+.icon {
+    fill: white;
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+}
+
+.games-extra-info>a {
+    width: 1rem;
+    height: 1rem;
+}
+
+.games-extra-info>div {
+    display: flex;
+    align-items: center;
+}
+
+.games-extra-info>div>p {
+    margin: 0 0.5rem 0 0;
 }
 
 @media (min-width: 600px) {
