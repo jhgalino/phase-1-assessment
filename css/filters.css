@@ -28,15 +28,12 @@
 }
 
 .filter-contents > div > label, 
-.filter-contents > section > div > label {
-    font-size: 1.25rem;
+.filter-contents > section > div > label,
+.filter-with-scrollbar > div > label {
+    font-size: 1.1rem;
 }
 
 .filter-with-scrollbar {
     overflow-y: scroll;
     height: 180px;
-}
-
-.filter-with-scrollbar > div > label {
-    font-size: 1.25rem;
 }
