@@ -1,8 +1,8 @@
 #search {
     background-color: #1c1e22;
-    height: 3rem;
-    font-size: 1.5rem;
-    color: #aaaaaa;
+    height: calc(1.5em + 1rem + 2px);
+    font-size: 1.171875rem;
+    color: #52575c;
     border: none;
 }
 

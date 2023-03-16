@@ -3,6 +3,15 @@
     row-gap: 1.5rem;
 }
 
+.filter-select {
+    background-color: #1c1e22;
+    height: calc(1.5em + 1rem + 2px);
+    font-size: 1.171875rem;
+    color: #52575c;
+    border: none;
+    width: 100%;
+}
+
 .filter-box {
     background-color: #32383e;
     border-radius: 2%;
