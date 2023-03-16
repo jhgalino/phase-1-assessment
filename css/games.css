@@ -8,3 +8,7 @@
     background-color: #32383e;
     border-radius: 2%;
 }
+
+.games-item > picture > img {
+    width: 100%;
+}
