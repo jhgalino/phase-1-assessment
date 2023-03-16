@@ -4,7 +4,7 @@
     border-bottom: 1px solid black;
     width: 100%;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0 0.5rem;
     background-color: #272b30;
     position: fixed;
 }
@@ -34,6 +34,12 @@
 
 #menu-title {
     display: flex;
+    align-items: center;
+}
+
+#menu-title > p {
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 
 #logo {
