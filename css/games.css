@@ -1,12 +1,12 @@
 .games {
     margin-top: 1.5rem;
     display: grid;
-    row-gap: 1.5rem;
 }
 
 .games-item {
     background-color: #32383e;
     border-radius: 2%;
+    margin-bottom: 1.5rem;
 }
 
 .games-item > picture > img {
@@ -21,9 +21,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
 .games-title > p {
     color: #aaaaaa;
-    text-decoration: none;
 }
