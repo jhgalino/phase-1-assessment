@@ -1,3 +1,0 @@
-function fillGamesList (arr) {
-  
-}
