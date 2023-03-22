@@ -1,6 +1,8 @@
 .games {
     margin-top: 1.5rem;
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: min-content;
 }
 
 .games-item {
@@ -15,6 +17,12 @@
 
 .games-info {
     padding: 1.25rem;
+}
+
+.games-info>p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .games-title {
@@ -68,13 +76,14 @@
     .games {
         margin-top: 0;
         display: grid;
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
 @media (min-width: 992px) {
     .games {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1.5rem;
         grid-auto-rows: min-content;
     }
@@ -83,7 +92,7 @@
 @media (min-width: 1200px) {
     .games {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.5rem;
         grid-auto-rows: min-content;
     }

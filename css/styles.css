@@ -30,7 +30,6 @@ a {
 
 @media (min-width: 1200px) {
     main {
-        justify-content: center;
         max-width: 1200px;
     }
 
