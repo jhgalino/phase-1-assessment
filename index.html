@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
+
+    <script src="js/getGamesList.js"></script>
+    <script>
+        getGamesList()
+        .then(data => data.json())
+        .then(data => console.log(data))
+        .catch(e => console.log(e));
+    </script>
 </head>
 
 <body>
