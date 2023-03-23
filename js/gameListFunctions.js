@@ -90,8 +90,10 @@ function addGameToList (game) {
   const gameGenre = document.createElement('p');
   gameGenre.innerText = game.genre;
   const gamePlatform = document.createElement('img');
-  gamePlatform.src = 'assets/windows.svg';
-  gamePlatform.alt = 'Windows icon';
+  gamePlatform.src = game.platform === 'PC (Windows)'
+    ? 'assets/windows.svg'
+    : 'assets/browser.svg';
+  gamePlatform.alt = 'Icon for platform';
   gamePlatform.classList.add('icon');
   gamesExtraInfoDiv.appendChild(gameGenre);
   gamesExtraInfoDiv.appendChild(gamePlatform);

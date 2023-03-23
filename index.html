@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="css/nav.css">
 
     <script src="js/gameListFunctions.js"></script>
-    <script>
+    <script defer>
         getGamesList()
         .then(data => {
+            clearGameList();
             const toRender = data.slice(0, 100);
             toRender.forEach(item => {
                 addGameToList(item);
             })
-        })
+        });
     </script>
 </head>
 
