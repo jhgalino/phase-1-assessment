@@ -29,11 +29,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 0;
 }
 
 .games-title-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .games-cost {
