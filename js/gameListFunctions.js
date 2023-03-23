@@ -74,7 +74,7 @@ function addGameToList (game) {
   const gamesExtraInfoDiv = document.createElement('div');
   const gameGenre = document.createElement('p');
   gameGenre.innerText = game.genre;
-  const gamePlatform = document.createElement();
+  const gamePlatform = document.createElement('p');
   gamePlatform.innerText = game.platform;
   gamesExtraInfoDiv.appendChild(gameGenre);
   gamesExtraInfoDiv.appendChild(gamePlatform);
