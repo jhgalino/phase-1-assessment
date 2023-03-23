@@ -26,7 +26,7 @@ function addGameToList (game) {
   thumbnail: "https://www.freetogame.com/g/540/thumbnail.jpg"
   title: "Overwatch 2"
   */
-  // const gameList = document.querySelector('.games');
+  const gamesList = document.querySelector('.games');
   // create gamelist item
   const gamesItem = document.createElement('section');
   gamesItem.classList.add('games-item');
@@ -85,4 +85,6 @@ function addGameToList (game) {
   gamesItemInfo.appendChild(gamesExtraInfo);
 
   gamesItem.appendChild(gamesItemInfo);
+
+  gamesList.appendChild(gamesItem);
 }
