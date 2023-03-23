@@ -11,6 +11,10 @@
     margin-bottom: 1.5rem;
 }
 
+.games-item-thumbnail {
+    width: 100%;
+}
+
 .games-item>picture>img {
     width: 100%;
 }

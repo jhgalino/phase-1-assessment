@@ -32,12 +32,16 @@ function addGameToList (game) {
   gamesItem.classList.add('games-item');
 
   // create picture > img and append to game list item
+  const thumbnailLink = document.createElement('a');
+  thumbnailLink.href = game.freetogame_profile_url;
   const gamesItemPic = document.createElement('picture');
   const gamesItemPicImg = document.createElement('img');
+  gamesItemPicImg.classList.add('games-item-thumbnail');
   gamesItemPicImg.src = game.thumbnail;
   gamesItemPicImg.alt = `An image showing ${game.title}`;
   gamesItemPic.appendChild(gamesItemPicImg);
-  gamesItem.appendChild(gamesItemPic);
+  thumbnailLink.appendChild(gamesItemPic);
+  gamesItem.appendChild(thumbnailLink);
 
   // create games info section
   const gamesItemInfo = document.createElement('section');
