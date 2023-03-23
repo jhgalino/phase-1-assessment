@@ -67,15 +67,22 @@ function addGameToList (game) {
 
   // add games-extra-info
   const gamesExtraInfo = document.createElement('div');
+  gamesExtraInfo.classList.add('games-extra-info');
 
   const gamesExtraInfoLink = document.createElement('a');
-  gamesExtraInfoLink.innerText = 'Add to Library';
+  const gamesExtraInfoLinkSvg = document.createElement('img');
+  gamesExtraInfoLinkSvg.src = 'assets/plus.svg';
+  gamesExtraInfoLinkSvg.alt = 'Plus icon';
+  gamesExtraInfoLinkSvg.classList.add('icon');
+  gamesExtraInfoLink.appendChild(gamesExtraInfoLinkSvg);
 
   const gamesExtraInfoDiv = document.createElement('div');
   const gameGenre = document.createElement('p');
   gameGenre.innerText = game.genre;
-  const gamePlatform = document.createElement('p');
-  gamePlatform.innerText = game.platform;
+  const gamePlatform = document.createElement('img');
+  gamePlatform.src = 'assets/windows.svg';
+  gamePlatform.alt = 'Windows icon';
+  gamePlatform.classList.add('icon');
   gamesExtraInfoDiv.appendChild(gameGenre);
   gamesExtraInfoDiv.appendChild(gamePlatform);
 
