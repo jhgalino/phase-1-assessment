@@ -12,6 +12,11 @@ async function getGamesList () {
   }
 }
 
+function clearGameList () {
+  const gamesList = document.querySelector('.games');
+  gamesList.replaceChildren();
+}
+
 function addGameToList (game) {
   /*
   developer: "Blizzard Entertainment"
@@ -27,6 +32,7 @@ function addGameToList (game) {
   title: "Overwatch 2"
   */
   const gamesList = document.querySelector('.games');
+
   // create gamelist item
   const gamesItem = document.createElement('section');
   gamesItem.classList.add('games-item');
