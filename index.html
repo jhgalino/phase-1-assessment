@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/nav.css">
 
     <script src="js/gameListFunctions.js"></script>
+    <script src="js/gameFilterFunctions.js"></script>
     <script defer>
         getGamesList()
         .then(data => {
@@ -68,7 +69,7 @@
             <section class="filters">
                 <section class="filter-box">
 
-                    <select class="filter-select">
+                    <select class="filter-select sortBy">
                         <option value="">Sorted By:</option>
                         <option value="relevance">Relevance</option>
                         <option value="popularity">Popularity</option>
@@ -76,7 +77,7 @@
                         <option value="alphabetical">Alphabetical</option>
                     </select>
 
-                    <section class="filter-contents">
+                    <section class="filter-contents platform">
                         <p class="filter-title">Platform</p>
                         <hr>
 
@@ -106,7 +107,7 @@
                         <p class="filter-title">Genre</p>
                         <hr>
 
-                        <section class="filter-with-scrollbar">
+                        <section class="filter-with-scrollbar category">
                             <div>
                                 <input type="checkbox" name="mmo" id="mmo">
                                 <label for="mmo">MMO</label>
@@ -169,7 +170,7 @@
                 <section class="filter-box">
 
                     <section class="filter-contents">
-                        <section>
+                        <section class="tags">
 
                             <p class="filter-title">Graphics</p>
                             <hr>
@@ -186,7 +187,7 @@
 
                         </section>
 
-                        <section>
+                        <section class="tags">
 
                             <p class="filter-title">Combat</p>
                             <hr>
@@ -203,7 +204,7 @@
 
                         </section>
 
-                        <section>
+                        <section class="tags">
                             <p class="filter-title">Gameplay</p>
                             <hr>
 
@@ -218,7 +219,7 @@
                             </div>
                         </section>
 
-                        <section>
+                        <section class="tags">
 
                             <p class="filter-title">Setting</p>
                             <hr>
@@ -259,7 +260,7 @@
                         <p class="filter-title">Tags</p>
                         <hr>
 
-                        <section class="filter-with-scrollbar">
+                        <section class="filter-with-scrollbar tags">
                             <div>
                                 <input type="checkbox" name="mmofps" id="mmofps">
                                 <label for="mmofps">MMOFPS</label>
