@@ -11,8 +11,7 @@ function getFilterOptions () {
   tags = Array.from(tags).map(item => item.name);
 
   sortBy = Array.from(sortBy)
-    .filter(item => item.selected)
-    .map(item => item.value);
+    .filter(item => item.selected && item.value !== '');
 
   return {
     platforms,
@@ -33,21 +32,35 @@ async function fetchFilteredItems (filters) {
 
   let platform;
   if (filters.platforms.length === 2) {
-    platform = '&platform=all';
-  } else if (filters.platforms === 1) {
-    platform = `&platform=${filters.platforms[0]}`;
+    platform = 'platform=all';
+  } else if (filters.platforms.length === 1) {
+    platform = `platform=${filters.platforms[0]}`;
   } else {
     platform = '';
   }
 
-  const sort = filters.sortBy[0] ? `&sort-by=${filters.sortBy[0]}` : '';
+  const sort = filters.sortBy.length ? `sort-by=${filters.sortBy[0]}` : '';
 
-  const tags = filters.tags.concat(filters.categories).length
-    ? filters.tags.concat(filters.categories).join('.')
-    : '';
+  if (filters.categories.length === 0 && filters.tags.length === 0) {
+    try {
+      const data = await fetch(
+        `https://free-to-play-games-database.p.rapidapi.com/api/games?${[platform, sort].join('&')}`,
+        options);
 
-  const data = await fetch(`https://free-to-play-games-database.p.rapidapi.com/
-api/filter?tag=${tags}&${platform}&${sort}`, options);
+      return await data.json();
+    } catch (error) {
+      return error;
+    }
+  } else {
+    const tags = `tag=${filters.tags.concat(filters.categories).join('.')}`;
+    try {
+      const data = await fetch(
+        `https://free-to-play-games-database.p.rapidapi.com/api/filter?${[tags, platform, sort].join('&')}`, 
+        options);
 
-  return await data.json();
+      return await data.json();
+    } catch (error) {
+      return error;
+    }
+  }
 }
