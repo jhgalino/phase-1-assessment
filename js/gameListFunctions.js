@@ -107,3 +107,13 @@ function addGameToList (game) {
 
   gamesList.appendChild(gamesItem);
 }
+
+function renderGames (games) {
+  games.forEach(data => {
+    clearGameList();
+    const toRender = data.slice(0, 100);
+    toRender.forEach(item => {
+      addGameToList(item);
+    });
+  });
+}

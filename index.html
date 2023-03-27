@@ -16,14 +16,7 @@
     <script src="js/gameListFunctions.js"></script>
     <script src="js/gameFilterFunctions.js"></script>
     <script defer>
-        getGamesList()
-        .then(data => {
-            clearGameList();
-            const toRender = data.slice(0, 100);
-            toRender.forEach(item => {
-                addGameToList(item);
-            })
-        });
+        renderGames(getGamesList());
     </script>
 </head>
 
