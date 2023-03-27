@@ -15,14 +15,13 @@
 
     <script src="js/gameListFunctions.js"></script>
     <script src="js/gameFilterFunctions.js"></script>
-    <script src="js/addEventListener.js"></script>
+    <script src="js/addEventListeners.js"></script>
     <script defer>
         getGamesList().then(data => {
             // console.log(data);
             const toRender = data.slice(0, 100);
             renderGames(toRender);
-        });
-        addEventListeners();
+        }).then(() => addEventListeners());
     </script>
 </head>
 
