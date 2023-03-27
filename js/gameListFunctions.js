@@ -109,11 +109,8 @@ function addGameToList (game) {
 }
 
 function renderGames (games) {
-  games.forEach(data => {
-    clearGameList();
-    const toRender = data.slice(0, 100);
-    toRender.forEach(item => {
-      addGameToList(item);
-    });
+  clearGameList();
+  games.forEach(item => {
+    addGameToList(item);
   });
 }
