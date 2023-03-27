@@ -11,7 +11,8 @@ function getFilterOptions () {
   tags = Array.from(tags).map(item => item.name);
 
   sortBy = Array.from(sortBy)
-    .filter(item => item.selected && item.value !== '');
+    .filter(item => item.selected && item.value !== '')
+    .map(item => item.value);
 
   return {
     platforms,
