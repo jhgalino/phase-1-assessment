@@ -16,12 +16,17 @@
     <script src="js/gameListFunctions.js"></script>
     <script src="js/gameFilterFunctions.js"></script>
     <script src="js/addEventListeners.js"></script>
+    <script src="js/search.js"></script>
     <script defer>
+        let store;
         getGamesList().then(data => {
-            // console.log(data);
+            store = data;
             const toRender = data.slice(0, 100);
             renderGames(toRender);
-        }).then(() => addEventListeners());
+        }).then(() => {
+            addEventListeners();
+            prepareSearch();
+        });
     </script>
 </head>
 
@@ -58,7 +63,7 @@
 
     <!-- Search -->
     <header>
-        <input type="text" name="search" id="search" placeholder="Search for games...">
+        <input type="text" name="search" id="search" placeholder="Search for games..." autocomplete="off">
     </header>
 
     <section class="main-content">
