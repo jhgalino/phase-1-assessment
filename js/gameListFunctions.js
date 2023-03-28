@@ -39,7 +39,7 @@ function addGameToList (game) {
 
   // create picture > img and append to game list item
   const thumbnailLink = document.createElement('a');
-  thumbnailLink.href = game.freetogame_profile_url;
+  thumbnailLink.href = `game-info.html?game=${game.id}`;
   const gamesItemPic = document.createElement('picture');
   const gamesItemPicImg = document.createElement('img');
   gamesItemPicImg.classList.add('games-item-thumbnail');
@@ -55,7 +55,7 @@ function addGameToList (game) {
 
   // create game title and append to games info
   const gameTitle = document.createElement('a');
-  gameTitle.href = game.freetogame_profile_url; // change later
+  gameTitle.href = `game-info.html?game=${game.id}`; // change later
   gameTitle.classList.add('games-title');
 
   const gameTitleText = document.createElement('p');
