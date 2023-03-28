@@ -7,7 +7,10 @@ function addEventListeners() {
   checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
       clearGameList();
-      fetchFilteredItems(getFilterOptions()).then(data => renderGames(data));
+      fetchFilteredItems(getFilterOptions()).then(data => {
+        store = data;
+        renderGames(data);
+      });
     },
     );
   },
